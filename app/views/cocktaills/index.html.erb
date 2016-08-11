@@ -1,8 +1,12 @@
 <h1>Cocktaills#index</h1>
 <p>Find me in app/views/cocktaills/index.html.erb</p>
 
+<%= link_to "Add a cocktaill", new_cocktaill_path, method: :get,  class: "btn btn-info"%></p>
+
 <hr>
 <% @cocktaills.each do |cocktaill| %>
 <%= "#{cocktaill.id} : #{cocktaill.name}" %>
+<br>
+<%= link_to "See details", cocktaill_path(cocktaill), method: :get, class: "btn btn-primary"%>
 <hr>
 <% end %>
