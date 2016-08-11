@@ -1,0 +1,19 @@
+<%= form_for(@cocktaill) do |r| %>
+<% if @cocktaill.errors.any? %>
+<div id="error_explanation">
+  <ul>
+    <% @cocktaill.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+
+  </ul>
+</div>
+<% end %>
+
+
+<%= r.label :name %>
+<%= r.text_field :name %>
+
+<%= r.submit %>
+
+<% end %>

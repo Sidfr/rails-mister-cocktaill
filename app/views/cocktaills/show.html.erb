@@ -1,2 +1,7 @@
 <h1>Cocktaills#show</h1>
 <p>Find me in app/views/cocktaills/show.html.erb</p>
+
+<h1>DETAIL DU COCKTAILL</h1>
+<%= "#{@cocktaill.id}: #{@cocktaill.name}" %>
+
+<%= link_to "Home", cocktaills_path, method: :get%>
