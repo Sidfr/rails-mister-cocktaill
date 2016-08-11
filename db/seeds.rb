@@ -7,8 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Cocktaill.new(name: "Cocktaill1").save
-Cocktaill.new(name: "Cocktaill2").save
-Cocktaill.new(name: "Cocktaill3").save
-Cocktaill.new(name: "Cocktaill4").save
-Cocktaill.new(name: "Cocktaill5").save
+# Cocktaill.new(name: "Cocktaill1").save
+# Cocktaill.new(name: "Cocktaill2").save
+# Cocktaill.new(name: "Cocktaill3").save
+# Cocktaill.new(name: "Cocktaill4").save
+# Cocktaill.new(name: "Cocktaill5").save
+
+Ingredient.create(name: "lemon")
+Ingredient.create(name: "ice")
+Ingredient.create(name: "mint leaves")
