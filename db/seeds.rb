@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Cocktaill.new(name: "Cocktaill1").save
+Cocktaill.new(name: "Cocktaill2").save
+Cocktaill.new(name: "Cocktaill3").save
+Cocktaill.new(name: "Cocktaill4").save
+Cocktaill.new(name: "Cocktaill5").save
