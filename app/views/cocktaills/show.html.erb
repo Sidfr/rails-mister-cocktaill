@@ -8,3 +8,9 @@
   <%= cl_image_tag photo.path, width: 300, height: 200, crop: :fill %>
 <% end %>
 
+<h2>REVIEWS</h2>
+<% @cocktaill.reviews.each do |review| %>
+<%= "#{review.id}: #{review.content}" %> </h2>
+<hr>
+<% end %>
+<hr>

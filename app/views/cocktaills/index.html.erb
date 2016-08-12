@@ -8,5 +8,6 @@
 <%= "#{cocktaill.id} : #{cocktaill.name}" %>
 <br>
 <%= link_to "See details", cocktaill_path(cocktaill), method: :get, class: "btn btn-primary"%>
+<%= link_to "Review", new_cocktaill_review_path(cocktaill), method: :get, class: "btn btn-success"%>
 <hr>
 <% end %>

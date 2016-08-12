@@ -32,8 +32,8 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'figaro'
-gem "cloudinary", "1.1.0"
-gem "attachinary", "1.3.1"
+gem "cloudinary"
+gem "attachinary"
 gem "jquery-fileupload-rails"
 
 # Use Capistrano for deployment
