@@ -1,5 +1,5 @@
 class Cocktaill < ApplicationRecord
-    mount_uploader :photo, PhotoUploader
+    has_attachments :photos, maximum: 3
     validates :name, presence: true, uniqueness: true
 
     has_many :doses, dependent: :destroy
