@@ -5,8 +5,3 @@
 <h1>DETAIL DU COCKTAILL</h1>
 <%= "#{@cocktaill.id}: #{@cocktaill.name}" %>
 <%= cl_image_tag @cocktaill.photo.url(:bright_face) %>
-
-<% @cocktaill.doses.each do |dose| %>
-<%= "#{dose}"%>
-<br>
-<%end%>
