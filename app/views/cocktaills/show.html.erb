@@ -4,3 +4,8 @@
 
 <h1>DETAIL DU COCKTAILL</h1>
 <%= "#{@cocktaill.id}: #{@cocktaill.name}" %>
+<%fail%>
+<% @cocktaill.doses.each do |dose| %>
+<%= "#{dose}"%>
+<br>
+<%end%>

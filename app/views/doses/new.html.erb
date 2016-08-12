@@ -1,0 +1,23 @@
+<h1>Doses#new</h1>
+<p>Find me in app/views/doses/new.html.erb</p>
+
+
+<%= simple_form_for [@cocktaill, @dose] do |f| %>
+
+<% if @dose.errors.any? %>
+<div id="error_explanation">
+  <ul>
+    <% @dose.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+
+  </ul>
+</div>
+<% end %>
+  <%= f.input :description %>
+  <%= f.input :ingredient_id, collection: Ingredient.all%>
+  <%= f.button :submit %>
+
+<% end %>
+
+<%= link_to "Cocktaill", cocktaill_path(@cocktaill), method: :get%>
