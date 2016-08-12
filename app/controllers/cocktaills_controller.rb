@@ -24,7 +24,7 @@ class CocktaillsController < ApplicationController
   private
 
   def cocktaill_params
-    params.require(:cocktaill).permit(:name)
+    params.require(:cocktaill).permit(:name,:photo, :photo_cache)
   end
 
   def require_find_param
